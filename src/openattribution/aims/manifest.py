@@ -1,6 +1,6 @@
 """AI Manifest - The core AIMS document."""
 
-from datetime import datetime
+from datetime import UTC, datetime
 
 from pydantic import BaseModel, Field
 
@@ -36,8 +36,8 @@ class AIManifest(BaseModel):
     )
 
     # Metadata
-    created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: datetime = Field(default_factory=datetime.utcnow)
+    created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
+    updated_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
     signature: str | None = Field(None, description="Cryptographic signature of manifest")
 
     # References to complementary standards
@@ -77,4 +77,4 @@ class AIManifest(BaseModel):
         """
         # TODO: Implement actual signing
         self.signature = "stub-signature"
-        self.updated_at = datetime.utcnow()
+        self.updated_at = datetime.now(UTC)
