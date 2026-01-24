@@ -35,8 +35,8 @@ dev = [
 [project.urls]
 Homepage = "https://openattribution.org/aims"
 Documentation = "https://openattribution.org/aims/SPECIFICATION.html"
-Repository = "https://github.com/openattribution/aims"
-Issues = "https://github.com/openattribution/aims/issues"
+Repository = "https://github.com/openattribution-org/aims"
+Issues = "https://github.com/openattribution-org/aims/issues"
 
 [build-system]
 requires = ["hatchling"]
