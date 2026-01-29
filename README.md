@@ -51,7 +51,7 @@ if other_manifest.verify():
 
 ## Specification
 
-Full specification: [openattribution.org/aims/SPECIFICATION.html](https://openattribution.org/aims/SPECIFICATION.html)
+Full specification: [SPECIFICATION.md](./SPECIFICATION.md)
 
 ## Three-Layer Model
 
